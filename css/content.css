@@ -1,0 +1,66 @@
+.prevNextCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+}
+.prevNextCont>div{
+    display: flex;
+    flex-direction: column;
+}
+.prevNextCont .prevCont a{
+    align-self: flex-start;
+}
+.prevNextCont .nextCont a{
+    align-self: flex-end;
+}
+.prevNextCont a{
+    display: inline-block;
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px -5px #000;
+}
+.content-cont{
+    padding: 20px 0;
+}
+.shirshak-cont{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+.shirshak-cont h1{
+    font-size: 24px;
+}
+.vyakhya-cont{
+    line-height: 26px;
+    padding: 0 10px;
+    text-align: justify;
+}
+.vyakhya-cont>*{
+    margin-bottom: 15px;
+}
+.vyakhya-cont p{
+    text-indent: 30px;
+}
+.vyakhya-cont ul, .vyakhya-cont ol{
+    padding: 0 10px 0 36px;
+    list-style-position: inside;
+}
+.vyakhya-cont li{
+    text-indent: -23px;
+    margin-bottom: 10px;
+}
+.table-cont{
+    max-width: 100%;
+    overflow: auto;
+}
+.table-cont table{
+    border-collapse: collapse;
+}
+.table-cont tr:nth-child(odd){
+    background-color: #eee;
+}
+.table-cont td, .vyakhya-cont th{
+    padding: 5px 12px;
+}
